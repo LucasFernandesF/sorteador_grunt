@@ -2,10 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('form-sorteador').addEventListener('submit', function() {
         event.preventDefault();
         let numeroMaximo = document.getElementById('numero-maximo').value;
-        numeroMaximo - parseInt(numeroMaximo)
+        numeroMaximo = parseInt(numeroMaximo)
 
-        let numeroAleatorio = Math.ceil() * numeroMaximo;
-        numeroAleatorio = Math.floor(numeroAleatorio);
+        let numeroAleatorio = Math.ceil(Math.random() * numeroMaximo);
         document.getElementById('resultado-valor').innerText = numeroAleatorio;
         document.querySelector('.resultado').style.display = 'block';
     })

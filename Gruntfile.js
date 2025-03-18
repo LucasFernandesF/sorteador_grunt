@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                 files: ['src/styles/**/*.less'],
                 tasks: ['less:development']
             },
-            htlm: {
+            html: {
                 files: ['src/index.html'],
                 tasks: ['replace:dev']
             }
@@ -36,7 +36,7 @@ module.exports = function (grunt) {
                         },
                         {
                             match: 'ENDERECO_DO_JS',
-                            replacement: '../src/scripts/main.js'
+                            replacement: '/src/scripts/main.js'
                         }
                     ]
                 },
